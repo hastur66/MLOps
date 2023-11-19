@@ -21,7 +21,7 @@ lr.fit(X_train, y_train)
 
 score = lr.score(X, y)
 
-mlflow.log_metrics("score", score)
+mlflow.log_metric("score", score)
 
 mlflow.log_param("n_jobs", 1)
 
