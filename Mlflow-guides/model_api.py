@@ -23,3 +23,6 @@ mlflow.sklearn.save_model(lr, "./mlruns/models")
 
 # log as a artifact
 mlflow.sklearn.log_model(lr, "./mlruns/models")
+
+# load model
+mlflow.sklearn.load_model(model_uri="./mlruns/models")
